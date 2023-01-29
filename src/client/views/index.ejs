@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener Microservice | freeCodeCamp.org</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <main>
+      <section>
+        <form action="api/shorturl" method="POST">
+          <fieldset class="form-fieldset">
+            <legend align="center">URL Shortener</legend>
+            <label for="url-input">URL:</label>
+            <input id="url-input" type="text" name="url" placeholder="https://www.example.com/" />
+            <input class="input-btn" type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+      </section>
+      <footer class="footer">
+        <p>By <a href="https://www.freecodecamp.org/">FreeCodeCamp</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
