@@ -4,7 +4,7 @@ const sendHomePage = async (req, res) => {
 	res.render("index.ejs");
 	res.end()
 }
-const regex = new RegExp(/^(http(s)?:\/\/)[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:?#[\]@!\$&'\(\)\*\+,;=.]+$/gm)
+const regex = new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/)
 const handleInputData = async (req, res) => {
 	const url = await req.body.url;
 	const match = regex.test(url);
